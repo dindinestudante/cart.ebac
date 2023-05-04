@@ -157,6 +157,7 @@ int main () //função do menu principal - responsável pelo menu do usuário com as
 		printf ("\t1 - Registrar nomes\n");
 		printf ("\t2 - Consultar nomes\n");
 		printf ("\t3 - Deletar nomes\n\n"); 
+		printf ("\t4 - Sair do sistema?\n\n");
 		printf ("Digite o número da sua opção: "); //fim do menu 
 	
 		scanf("%d", &opcao); //comando "%d" para armazenar a escolha do usuário
@@ -175,6 +176,11 @@ int main () //função do menu principal - responsável pelo menu do usuário com as
 			
 			case 3:
 			deletar(); //chamada da função deletar nomes
+            break;
+            
+            case 4:
+            printf("Obrigado por utilizar nosso sistema!\n");
+            return 0;
             break;
 				
 			default:
